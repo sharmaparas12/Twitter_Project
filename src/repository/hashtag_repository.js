@@ -19,7 +19,7 @@ class Hashtagrepository {
     async bulkcreate(data)
     {
         try {
-            console.log(data); 
+            
             const hashtags=await Hashtag.insertMany(data);
             return hashtags;
             
