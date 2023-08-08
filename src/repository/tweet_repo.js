@@ -29,6 +29,18 @@ class Tweetrepository {
             
         }
     }
+    async find(id){
+        try {
+            
+            const response=await Tweet.findById(id).populate({path:'likes'});
+            return response;
+            
+        } catch (error) {
+            console.log("error in repo layer");
+            throw {error};
+            
+        }
+    }
 
 
 

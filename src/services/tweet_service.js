@@ -1,5 +1,4 @@
 import {Tweetrepository,Hashtagrepository} from '../repository/index.js';
-console.log(Tweetrepository);
 
 
 class Tweetservice {

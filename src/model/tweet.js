@@ -5,13 +5,14 @@ const tweet_Schema=new mongoose.Schema({
         required:true,
         max:[200,'Tweet content cannot be more than 250 characters']
     },
-    hashtags:[{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'Hashtag'
-    }]
-   
+    likes:[
+        {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'Like'
+        }
+    ]
 
-},{timestamps:true});
+   },{timestamps:true});
 
 const Tweet=mongoose.model('Tweet',tweet_Schema);
 export default Tweet;
