@@ -16,5 +16,19 @@
 
 # API End Points
 
-1. POST `/api/v1/tweets`
-   - In the body, accepts content-text with #tags.
+1. POST 
+
+    1.`/api/v1/tweets`
+       - In the body, accepts content-text with #tags.
+
+    2.'/api/vi/tweets/likes
+       -Toggles a like on the tweet or comment
+    
+    3.'/api/v1/comment
+       -To comment on a tweet
+       -To comment on a comment
+       -Accepts text to comment on the tweet
+
+    
+
+

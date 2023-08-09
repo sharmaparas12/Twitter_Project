@@ -8,11 +8,12 @@ class CrudRepository{
 
     async create(data){
         try {
+            
             const response=await this.model.create(data);
             return response;
             
         } catch (error) {
-            console.log("error in repo here I am   layer");
+            console.log("error in  layer");
             throw {error};
             
         }
